@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/borrar"
+            android:layout_width="44dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="28dp"
+            android:text="Borrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.074" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Nombre"
+            app:layout_constraintBottom_toBottomOf="@+id/telefono"
+            app:layout_constraintEnd_toStartOf="@+id/telefono"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="220dp"
+            android:text="Telefono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nombre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="72dp"
+            android:layout_height="37dp"
+            android:text="Mail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edad"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="68dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="204dp"
+            android:text="Edad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mail"
+            app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+        <Button
+            android:id="@+id/editar"
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="36dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="Editar"
+            app:layout_constraintEnd_toStartOf="@+id/borrar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
